@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    color: #0f172a;
+    background-color: #f8fafc;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom precision range input styling */
+input[type="range"].cad-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: #e2e8f0;
+  border-radius: 2px;
+  outline: none;
+}
+
+input[type="range"].cad-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  background: #1d4ed8;
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.28);
+  cursor: pointer;
+}
+
+input[type="range"].cad-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  background: #1d4ed8;
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.28);
+  cursor: pointer;
+}

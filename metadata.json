@@ -1,0 +1,6 @@
+{
+  "name": "SolidCraft",
+  "description": "AI parametric CAD platform that turns natural-language specifications into editable 3D solid models ready for STEP and STL export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
